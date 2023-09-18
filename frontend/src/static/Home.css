@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;1,500&display=swap");
+body {
+  background: linear-gradient(#ca2ecd, #2cbdbf, #002fff);
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  font-family: "DM Mono", monospace;
+  font-weight: 300;
+  overflow: hidden;
+  color: white;
+  text-align: center;
+  overflow-y: scroll;
+}
+
+
+
+h1 {
+  font-size: 3em;
+  margin: 40px 40px 40px 40px;
+}
+
+h2 {
+  font-size: 2em;
+  margin: 20px 20px 20px 20px;
+}
+
+.id-telegram {
+  font-size: 0.7em;
+}
+
+.gmail-img {
+  border-radius: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.github-logo {
+  border-radius: 105%;
+}
+
+.copy-status {
+  display: none;
+}
+
+.copy-success {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 1em;
+  text-align: center;
+  background-color: rgb(145, 233, 14);
+  border-radius: 30px;
+}
+
+#text-copy {
+  display: none;
+}
+
+.btn-copy {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#3800e7, #8a15ff);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(#4216c7, #51049e);
+}
+
+.github {
+  min-width: 30px;
+  max-width: 6vw;
+  max-height: 6vw;
+  min-width: 50px;
+  min-height: 50px;
+}
+
+.projects-button {
+  text-decoration: none;
+  --clr-font-main: hsla(0 0% 20% / 100);
+  --btn-bg-1: hsla(194 100% 69% / 1);
+  --btn-bg-2: hsla(217 100% 56% / 1);
+  --btn-bg-color: hsla(260, 100%, 50%, 1); 
+  --radii: 0.5em;
+  cursor: pointer;
+  padding: 0.9em 1.4em;
+  min-width: 100px;
+  min-height: 44px;
+  max-width: 200px;
+  max-height: 120px;
+  font-size: var(--size, 1rem);
+  font-weight: 500;
+  transition: 0.8s;
+  background-size: 280% auto;
+  background-image: linear-gradient(325deg, var(--btn-bg-2) 0%, var(--btn-bg-1) 55%, var(--btn-bg-2) 90%);
+  border: none;
+  border-radius: var(--radii);
+  color: var(--btn-bg-color);
+  box-shadow: 0px 0px 20px rgba(71, 184, 255, 0.5), 0px 5px 5px -1px rgba(58, 125, 233, 0.25), inset 4px 4px 8px rgba(175, 230, 255, 0.5), inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+}
+
+
+.projects-button:hover {
+  background-position: right top;
+} 
+
+.projects-button:active {
+  background-position: right top;
+}
+
+.projects-button:is(:focus, :focus-within,:active) {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .projects-button {
+    transition: linear;
+  }
+}
+
+
+.about-me {
+  max-width: 70%;
+  word-wrap: break-word;
+}
+
+.scrollpage {
+  align-items: center;
+  /* text-align: center; */
+}
+
+.copy-container {
+  position: relative;
+  display: inline-block;
+}
+
+.hideSection {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+@media(prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.logo:nth-child(1){
+  transition-delay: 200ms;
+}
+.logo:nth-child(2){
+  transition-delay: 400ms;
+}
+.logo:nth-child(3){
+  transition-delay: 600ms;
+}
+.logo:nth-child(4){
+  transition-delay: 800ms;
+}
+.logo:nth-child(5){
+  transition-delay: 1000ms;
+}
+.logo:nth-child(6){
+  transition-delay: 1200ms;
+}
+.logo:nth-child(7){
+  transition-delay: 1400ms;
+}
+
+.logo:nth-child(8){
+  transition-delay: 1600ms;
+}
+
+.logo:nth-child(9){
+  transition-delay: 1800ms;
+}
+
+.logo img {
+  display: block;
+  max-width: 6vw;
+  max-height: 6vw;
+  min-width: 40px;
+  min-height: 40px;
+  margin: 10px 10px 10px 10px;
+}
+
+section {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  margin-bottom: 300px;
+  align-content: center;
+}
+
+
